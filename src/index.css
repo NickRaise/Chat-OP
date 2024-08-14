@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply to the whole page or a specific container */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    height: 8px; /* Height of the scrollbar (for horizontal scrollbars) */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #2d2b2b; /* Light lavender background for the scrollbar track */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #7f56d9; /* Tailwind purple-500 */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #6d28d9; /* Darker shade for hover effect */
+}
+
+* {
+    scroll-behavior: smooth;
+}
